@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const BellOnBundlerErrorPlugin = require('bell-on-bundler-error-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const Dotenv = require('dotenv-webpack');
 const extensions = ['.js'];
 
 const entries = {
@@ -46,6 +46,13 @@ const JS_CONFIG = {
     new HtmlWebpackPlugin({
       template: './public/index.html',
       filename: 'index.html',
+    }),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+    }),
+    new Dotenv({
+      path: '.env.' + process.env.NODE_ENV,
+      safe: false,
     }),
   ],
 };
