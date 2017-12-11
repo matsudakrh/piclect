@@ -1,0 +1,1 @@
+{"virtualbox":{"/var/www/app_root":{"guestpath":"/var/www/app_root","hostpath":"/Users/hiroki/private/piclect/packages/piclect-db","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/hiroki/private/piclect/packages/piclect-db","disabled":false,"__vagrantfile":true}}}

@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  piclect-api:
+    container_name: piclect-api
+    build: .
+    environment:
+      NODE_ENV: development
+    ports:
+      - "3000:5000"
+#    tty: true
+    working_dir: /var/wwww/app
+    volumes:
+      - ./:/var/wwww/app
+      - /var/wwww/app/node_modules

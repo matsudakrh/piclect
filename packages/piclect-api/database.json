@@ -1,0 +1,8 @@
+{
+  "dev": {
+    "driver": "mysql", //DBの種類
+    "user": "root", //ログインするユーザ名
+    "password": "password", //ユーザのパスワード
+    "database": "piclect" //Migrationを行うデータベース名
+  }
+}
